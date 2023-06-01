@@ -23,7 +23,7 @@ const PostPage = () => {
     <>
       <div ref={postsRef} className="post-page">
         <h2>{post.title}</h2>
-        <img src={post.image} alt="Изображение поста" />
+        <img src={post.image} alt="" />
         <p>{post.content}</p>
         <p>Автор: {post.author}</p>
         <p>Дата публикации: {post.date}</p>

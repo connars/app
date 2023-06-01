@@ -64,7 +64,7 @@ const Posts = () => {
               {postsToShow.map((post) => (
                 <div className="post" key={post.id} onClick={() => handlePostClick(post.id)}>
                   <h2>{post.title}</h2>
-                  <img src={post.image} alt="Изображение поста" />
+                  <img src={post.image} alt=""/>
                   <p>{post.content.length > 70 ? `${post.content.substring(0, 70)}...` : post.content}</p>
                   <p>Автор: {post.author}</p>
                   <p>Дата публикации: {post.date}</p>
