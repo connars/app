@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.blog {
+    display: flex;
+    gap: 60px;
+
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.post img {
+    width: 400px;
+    object-fit: cover;
+    height: 250px;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.post-nav {
+    position: sticky;
+    top: 0px;
+    height: 500px;
+}
+.post-nav ul{
+    font-size: 22px;
+    padding: 0;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}

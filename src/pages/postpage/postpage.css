@@ -1,0 +1,17 @@
+.post-page {
+    padding-top: 120px;
+    color: wheat;
+    width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.post-page p {
+    color: white !important;
+}
+
+.post-page img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
