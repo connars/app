@@ -11,7 +11,6 @@ function Maps() {
           center: { lat: 0, lng: 0 },
           zoom: 8,
         });
-  
         // Создание пользовательских иконок
         const icon1 = {
           url: 'http://plamet.ua/wp-content/uploads/2023/06/marker-3.png', // Путь к изображению для первой иконки
@@ -42,14 +41,21 @@ function Maps() {
       script.defer = true;
       script.async = true;
       document.head.appendChild(script);
-  
+      
       // Очистка ресурсов после размонтирования компонента
       return () => {
         document.head.removeChild(script);
       };
     }, [apiKey]);
   
-    return <div ref={mapRef} style={{ width: '100%', height: '90vh' }}></div>;
+    return (
+        <>
+            <div ref={mapRef} style={{ width: '100%', height: '90vh' }}>
+        
+            </div>;
+        </>
+    )
+
   }
 
 export default Maps;
