@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    list-style: none;
+    background-color: rgb(56, 56, 56);
+}
+
+.header-item {
+    color: white;
+    padding-top: 18px;
+    margin: 0;
+    text-decoration: none !important;
+}
+
+.header li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-item:hover {
+    color: red;
+    border-top: 2px solid red;
+}
