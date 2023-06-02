@@ -49,7 +49,23 @@ function Maps() {
     }, [apiKey]);
   
     return (
-        <>
+        <>  
+            <div className='map-nav'>
+                <ul>
+                    <li>
+                       nav 1
+                    </li>
+                    <li>
+                       nav 2
+                    </li>
+                    <li>
+                       nav 3
+                    </li>
+                    <li>
+                       nav 4
+                    </li>
+                </ul>
+            </div>
             <div ref={mapRef} style={{ width: '100%', height: '90vh' }}>
         
             </div>;
