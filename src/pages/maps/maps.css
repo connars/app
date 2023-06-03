@@ -1,13 +1,39 @@
 .map-nav{
     position: absolute;
-    top: 120px;
-    left: 10px;
+    bottom: 90px;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+   
     padding: 20px;
     z-index: 99;
-    background-color: black;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .map-nav ul {
     list-style: none;
     padding: 0;
+
+    display: flex;
+    gap: 40px;
+    color: black;
+}
+
+.map-nav h2{
+    font-size: 14px;
+    color: black;
+}
+
+.map-nav ul li {
+    cursor: pointer;
+}
+
+.map-nav ul li:hover {
+    color: red;
+}
+
+iframe button {
+    background-color: brown !important;
 }

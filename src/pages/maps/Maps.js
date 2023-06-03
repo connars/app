@@ -16,12 +16,12 @@ function Maps() {
       map.setOptions({ styles: darkMapStyles });
       // Создание пользовательских иконок
       const icon1 = {
-        url: 'http://plamet.ua/wp-content/uploads/2023/06/marker-5.png', // Путь к изображению для первой иконки
+        url: 'https://ehoss.com/mail/marker.png', // Путь к изображению для первой иконки
         scaledSize: new window.google.maps.Size(50, 50), // Размер иконки
       };
 
       const icon2 = {
-        url: 'http://plamet.ua/wp-content/uploads/2023/06/marker-5.png', // Путь к изображению для второй иконки
+        url: 'https://ehoss.com/mail/marker.png', // Путь к изображению для второй иконки
         scaledSize: new window.google.maps.Size(50, 50), // Размер иконки
       };
 
@@ -38,16 +38,13 @@ function Maps() {
         icon: icon2, // Иконка для второй точки
       });
 
-            // Создание границ для фокусировки карты между двумя маркерами
-            const bounds = new window.google.maps.LatLngBounds();
-            bounds.extend(marker1.getPosition());
-            bounds.extend(marker2.getPosition());
+      // Создание границ для фокусировки карты между двумя маркерами
+      const bounds = new window.google.maps.LatLngBounds();
+      bounds.extend(marker1.getPosition());
+      bounds.extend(marker2.getPosition());
       
-            // Фокусировка карты на границах
-            map.fitBounds(bounds);
-
-
-
+      // Фокусировка карты на границах
+      map.fitBounds(bounds);
             // Создание полигональной зоны
       const zoneCoords = [
         { lat: 48.197070, lng: 17.360877 },
@@ -80,7 +77,6 @@ function Maps() {
         infoWindow.close();
       });
 
-
       // Добавление зоны на карту
       zone.setMap(map);
 
@@ -101,14 +97,17 @@ function Maps() {
 
   return (
     <>
-      {/* <div className="map-nav">
+      <div className="map-nav">
+        <h2>
+          Какое-то меню
+        </h2>
         <ul>
-          <li>nav 1</li>
+          <li>Фокус на зону</li>
           <li>nav 2</li>
           <li>nav 3</li>
           <li>nav 4</li>
         </ul>
-      </div> */}
+      </div>
       <div ref={mapRef} style={{ width: '100%', height: '90vh' }}></div>
     </>
   );
